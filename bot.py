@@ -81,7 +81,7 @@ def book_a_reservation(day):
         checkbox.click()
         
 
-        time.sleep(7)
+        time.sleep(6)
 
         submit_button = browser.find_element(By.ID, 'bs_submit')
         submit_button.click()
