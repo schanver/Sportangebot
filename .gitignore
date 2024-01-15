@@ -1,4 +1,4 @@
 *.txt
 *.png
 *.jpg
-*.pyc
+__pycache__/
