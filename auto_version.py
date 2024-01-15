@@ -1,6 +1,6 @@
 from bot import book_a_reservation
 import datetime
-
+# Run this file from crontab
 tage = ["montag","dienstag","mittwoch","donnerstag","freitag","samstag","sonntag"]
 
 def anmelden():
