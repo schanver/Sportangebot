@@ -1,0 +1,8 @@
+Name
+Nachname 
+Addresse
+PLZ und Stadt
+Email Addresse
+Telefonnummer  
+Matrikelnummer (falls Student)
+
