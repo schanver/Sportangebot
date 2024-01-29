@@ -81,9 +81,9 @@ def book_a_reservation(day):
         checkbox.click()
         
 
-        time.sleep(6)
-
-        submit_button = browser.find_element(By.ID, 'bs_submit')
+        #browser.execute_script("window.scrollBy(0,200);")
+        time.sleep(8)
+        submit_button = browser.find_element(By.XPATH  , '//input[@class="sub" and @value="weiter zur Buchung"]')
         submit_button.click()
 
         submit = browser.find_element(By.XPATH, '//input[@class="sub" and @title="binding reservation"]')
