@@ -8,7 +8,7 @@ import time
 import datetime
 
 info = []
-kurs_id =  {"montag":'BS_Kursid_91055',"dienstag":'BS_Kursid_91054',"mittwoch":'BS_Kursid_91056',"donnerstag":'BS_Kursid_91057',"freitag":'BS_Kursid_91059'}
+kurs_id =  {"montag":'BS_Kursid_92577',"dienstag":'BS_Kursid_92578',"mittwoch":'BS_Kursid_92579',"donnerstag":'BS_Kursid_92580',"freitag":'BS_Kursid_92581'}
 def read_from_file():
     with open('credentials.txt', 'r') as file:
         for line in file:
@@ -91,10 +91,10 @@ def book_a_reservation(day):
 
         browser.implicitly_wait(3)
         browser.save_screenshot("reservation.png")
-        print(f"Für {day} erfolgreich einen Platz reserviert")
+        print(f"Für {day[0].upper() + day[1:]} erfolgreich einen Platz reserviert")
 
     except NoSuchElementException as e:
         print(f"Exception occured: {e}")
 
     finally:
-        browser.close()
+        browser.quit()
